@@ -1,0 +1,83 @@
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#else
+#ifndef FOUNDATION_EXPORT
+#if defined(__cplusplus)
+#define FOUNDATION_EXPORT extern "C"
+#else
+#define FOUNDATION_EXPORT extern
+#endif
+#endif
+#endif
+
+#import "CTMediator+MKBPMAdd.h"
+#import "MKMokoPlugBPMModuleKey.h"
+#import "MKBPMConnectModel.h"
+#import "MKBPMBaseController.h"
+#import "MKBPMCountdownPickerView.h"
+#import "MKBPMProtectionTextFieldCell.h"
+#import "MKBPMSingleSelectedCell.h"
+#import "MKBPMTextButtonCell.h"
+#import "MKBPMAboutController.h"
+#import "MKBPMAboutDataModel.h"
+#import "MKBPMAboutCell.h"
+#import "MKBPMAdvertisementController.h"
+#import "MKBPMAdvertisementModel.h"
+#import "MKBPMAdvTxPowerCell.h"
+#import "MKBPMBleConnectedIndicatorController.h"
+#import "MKBPMButtonSettingController.h"
+#import "MKBPMButtonSettingModel.h"
+#import "MKBPMDeviceInfoController.h"
+#import "MKBPMDeviceInfoModel.h"
+#import "MKBPMEnergyController.h"
+#import "MKBPMEnergyModel.h"
+#import "MKBPMEnergyDailyView.h"
+#import "MKBPMEnergyDataCell.h"
+#import "MKBPMEnergyHourlyView.h"
+#import "MKBPMEnergyTotalView.h"
+#import "MKBPMEnergyReportController.h"
+#import "MKBPMEnergyReportModel.h"
+#import "MKBPMIndicatorColorController.h"
+#import "MKBPMIndicatorColorModel.h"
+#import "MKBPMIndicatorColorCell.h"
+#import "MKBPMIndicatorColorHeaderView.h"
+#import "MKBPMIndicatorController.h"
+#import "MKBPMIndicatorModel.h"
+#import "MKBPMIndicatorTableLineView.h"
+#import "MKBPMLoadStatusController.h"
+#import "MKBPMLoadStatusModel.h"
+#import "MKBPMPeriodicalReportingController.h"
+#import "MKBPMPeriodicalReportingModel.h"
+#import "MKBPMPowerOnModeController.h"
+#import "MKBPMPowerController.h"
+#import "MKBPMPowerModel.h"
+#import "MKBPMProtectionConfigController.h"
+#import "MKBPMProtectionConfigDefines.h"
+#import "MKBPMProtectionConfigModel.h"
+#import "MKBPMProtectionSwitchController.h"
+#import "MKBPMScanController.h"
+#import "MKBPMScanPageModel.h"
+#import "MKBPMScanPageCell.h"
+#import "MKBPMSettingController.h"
+#import "MKBPMSettingModel.h"
+#import "MKBPMSwitchController.h"
+#import "MKBPMSwitchModel.h"
+#import "MKBPMTabBarController.h"
+#import "MKBPMUpdateController.h"
+#import "MKBPMDFUModule.h"
+#import "CBPeripheral+MKBPMAdd.h"
+#import "MKBPMCentralManager.h"
+#import "MKBPMInterface+MKBPMConfig.h"
+#import "MKBPMInterface.h"
+#import "MKBPMOperation.h"
+#import "MKBPMOperationID.h"
+#import "MKBPMPeripheral.h"
+#import "MKBPMSDK.h"
+#import "MKBPMSDKDataAdopter.h"
+#import "MKBPMSDKNormalDefines.h"
+#import "MKBPMTaskAdopter.h"
+#import "Target_MokoPlug_BPM_Module.h"
+
+FOUNDATION_EXPORT double MKBlePlugMaxVersionNumber;
+FOUNDATION_EXPORT const unsigned char MKBlePlugMaxVersionString[];
+
