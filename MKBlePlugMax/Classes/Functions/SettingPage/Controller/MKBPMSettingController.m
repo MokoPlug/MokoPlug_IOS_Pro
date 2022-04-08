@@ -272,7 +272,7 @@ mk_textSwitchCellDelegate>
     @weakify(self);
     UIAlertAction *moreAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         @strongify(self);
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"mk_bpm_popToRootViewControllerNotification" object:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"mk_bpm_popToRootWithoutAlertNotification" object:nil];
     }];
     [alertView addAction:moreAction];
     

@@ -55,6 +55,10 @@
                                                  name:@"mk_bpm_popToRootViewControllerNotification"
                                                object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(gotoScanPage)
+                                                 name:@"mk_bpm_popToRootWithoutAlertNotification"
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(dfuUpdateComplete)
                                                  name:@"mk_bpm_centralDeallocNotification"
                                                object:nil];

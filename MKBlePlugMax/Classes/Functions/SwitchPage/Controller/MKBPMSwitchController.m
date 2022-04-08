@@ -337,7 +337,7 @@
                                                                 preferredStyle:UIAlertControllerStyleAlert];
     alertView.notificationName = @"mk_bpm_needDismissAlert";
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"NO" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"mk_bpm_popToRootViewControllerNotification" object:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"mk_bpm_popToRootWithoutAlertNotification" object:nil];
     }];
     [alertView addAction:cancelAction];
     @weakify(self);
@@ -365,7 +365,7 @@
                                                                 preferredStyle:UIAlertControllerStyleAlert];
     alertView.notificationName = @"mk_bpm_needDismissAlert";
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"NO" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"mk_bpm_popToRootViewControllerNotification" object:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"mk_bpm_popToRootWithoutAlertNotification" object:nil];
     }];
     [alertView addAction:cancelAction];
     @weakify(self);
