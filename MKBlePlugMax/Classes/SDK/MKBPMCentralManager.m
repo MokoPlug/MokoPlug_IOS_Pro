@@ -460,7 +460,7 @@ static dispatch_once_t onceToken;
     NSString *powerFactor = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(28, 2)];
     
     NSInteger currentFrequencyValue = [MKBLEBaseSDKAdopter getDecimalWithHex:content range:NSMakeRange(30, 4)];
-    NSString *frequencyOfCurrent = [NSString stringWithFormat:@"%.1f",(currentFrequencyValue * 0.01)];
+    NSString *frequencyOfCurrent = [NSString stringWithFormat:@"%.2f",(currentFrequencyValue * 0.01)];
     
     NSInteger totalEnergyValue = [MKBLEBaseSDKAdopter getDecimalWithHex:content range:NSMakeRange(34, 8)];
     NSString *totalEnergy = [NSString stringWithFormat:@"%.2f",(totalEnergyValue * 0.01)];

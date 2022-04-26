@@ -83,8 +83,10 @@
     if (!ValidDict(dic)) {
         return;
     }
-    self.dataModel.isOn = [dic[@"isOn"] boolValue];
-    self.delayTimeLabel.hidden = YES;
+    if ([dic[@"isOn"] boolValue] != self.dataModel.isOn) {
+        self.dataModel.isOn = [dic[@"isOn"] boolValue];
+        self.delayTimeLabel.hidden = YES;
+    }
     [self updateViewState];
 }
 
@@ -94,7 +96,7 @@
         return;
     }
     NSInteger seconds = [dic[@"remainingTime"] integerValue];
-    self.delayTimeLabel.hidden = (seconds == 0);
+//    self.delayTimeLabel.hidden = (seconds == 0);
     BOOL isOn = [dic[@"isOn"] boolValue];
     NSString *str_hour = [NSString stringWithFormat:@"%02ld",seconds/3600];
     NSString *str_minute = [NSString stringWithFormat:@"%02ld",(seconds%3600)/60];
