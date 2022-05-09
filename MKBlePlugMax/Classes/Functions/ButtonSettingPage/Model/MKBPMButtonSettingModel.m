@@ -28,8 +28,8 @@
             [self operationFailedBlockWithMsg:@"Read Switch Function Error" block:failedBlock];
             return;
         }
-        if (![self readResetFunction]) {
-            [self operationFailedBlockWithMsg:@"Read Reset Function Error" block:failedBlock];
+        if (![self readResetByButton]) {
+            [self operationFailedBlockWithMsg:@"Read Reset By Button Error" block:failedBlock];
             return;
         }
         moko_dispatch_main_safe(^{
@@ -55,9 +55,9 @@
     return success;
 }
 
-- (BOOL)readResetFunction {
+- (BOOL)readResetByButton {
     __block BOOL success = NO;
-    [MKBPMInterface bpm_readResetClearEnergyWithSucBlock:^(id  _Nonnull returnData) {
+    [MKBPMInterface bpm_readResetByButtonWithSucBlock:^(id  _Nonnull returnData) {
         success = YES;
         self.resetIsOn = [returnData[@"result"][@"isOn"] boolValue];
         dispatch_semaphore_signal(self.semaphore);

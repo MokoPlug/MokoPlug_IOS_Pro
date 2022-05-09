@@ -25,6 +25,7 @@ typedef NS_ENUM(NSInteger, mk_bpm_taskOperationID) {
     mk_bpm_taskReadPowerIndicatorStatusOperation,           //读取电源指示灯开关指示
     mk_bpm_taskReadPowerIndicatorProtectionSignalOperation, //读取电源指示灯保护触发指示
     mk_bpm_taskReadTxPowerOperation,            //读取TxPower
+    mk_bpm_taskReadResetByButtonOperation,      //读取按键恢复出厂设置
     mk_bpm_taskReadButtonSwitchFunctionOperation,   //读取按键控制功能开关
     mk_bpm_taskReadResetClearEnergyOperation,       //读取恢复出厂设置的时候是否清除电能
     mk_bpm_taskReadSpecificationsOfDeviceOperation, //读取设备规格
@@ -34,7 +35,7 @@ typedef NS_ENUM(NSInteger, mk_bpm_taskOperationID) {
     mk_bpm_taskReadEnergyStorageChangeThresholdOperation,   //读取功率变化存储阈值
     mk_bpm_taskReadOverLoadProtectionOperation,              //读取过载保护信息
     mk_bpm_taskReadOverVoltageProtectionOperation,           //读取过压保护信息
-    mk_bpm_taskReadSagVoltageProtectionOperation,            //读取欠压保护信息
+    mk_bpm_taskReadUnderVoltageProtectionOperation,            //读取欠压保护信息
     mk_bpm_taskReadOverCurrentProtectionOperation,           //读取过流保护信息
     mk_bpm_taskReadPowerIndicatorColorOperation,             //读取功率指示灯颜色
     mk_bpm_taskReadLoadStatusNotificationsOperation,         //读取负载通知开关
@@ -58,6 +59,7 @@ typedef NS_ENUM(NSInteger, mk_bpm_taskOperationID) {
     mk_bpm_taskConfigPowerIndicatorStatusOperation,             //配置电源指示灯开关指示
     mk_bpm_taskConfigPowerIndicatorProtectionSignalOperation,   //配置电源指示灯保护触发指示
     mk_bpm_taskConfigTxPowerOperation,          //配置设备TxPower
+    mk_bpm_taskConfigResetByButtonOperation,    //配置按键恢复出厂设置
     mk_bpm_taskConfigButtonSwitchFunctionOperation, //配置按键控制功能开关
     mk_bpm_taskConfigResetClearEnergyOperation,     //配置恢复出厂设置是否清除电能数据
     mk_bpm_taskConfigAdvIntervalOperation,      //配置广播间隔
@@ -66,7 +68,7 @@ typedef NS_ENUM(NSInteger, mk_bpm_taskOperationID) {
     mk_bpm_taskConfigEnergyStorageChangeThresholdOperation, //配置功率变化存储阈值
     mk_bpm_taskConfigOverLoadOperation,                          //配置过载保护信息
     mk_bpm_taskConfigOverVoltageOperation,                       //配置过压保护信息
-    mk_bpm_taskConfigSagVoltageOperation,                        //配置欠压保护信息
+    mk_bpm_taskConfigUnderVoltageOperation,                        //配置欠压保护信息
     mk_bpm_taskConfigOverCurrentOperation,                       //配置过流保护信息
     mk_bpm_taskConfigPowerIndicatorColorOperation,              //配置功率指示灯颜色
     mk_bpm_taskConfigLoadStatusNotificationsOperation,          //配置负载通知开关

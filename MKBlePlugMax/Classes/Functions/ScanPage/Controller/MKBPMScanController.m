@@ -128,7 +128,8 @@ MKBPMTabBarControllerDelegate>
 - (void)mk_scanSearchButtonMethod {
     [MKSearchConditionsView showSearchKey:self.buttonModel.searchKey
                                      rssi:self.buttonModel.searchRssi
-                                  minRssi:-127 searchBlock:^(NSString * _Nonnull searchKey, NSInteger searchRssi) {
+                                  minRssi:-100
+                              searchBlock:^(NSString * _Nonnull searchKey, NSInteger searchRssi) {
         self.buttonModel.searchRssi = searchRssi;
         self.buttonModel.searchKey = searchKey;
         self.searchButton.dataModel = self.buttonModel;
@@ -377,7 +378,7 @@ MKBPMTabBarControllerDelegate>
         NSString *localPassword = [[NSUserDefaults standardUserDefaults] objectForKey:localPasswordKey];
         textField.text = localPassword;
         self.asciiText = localPassword;
-        self.passwordField.placeholder = @"The password is 8 characters.";
+        self.passwordField.placeholder = @"The password should be 8 characters.";
         [textField addTarget:self action:@selector(passwordInput) forControlEvents:UIControlEventEditingChanged];
     }];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
@@ -548,8 +549,8 @@ MKBPMTabBarControllerDelegate>
     if (!_buttonModel) {
         _buttonModel = [[MKSearchButtonDataModel alloc] init];
         _buttonModel.placeholder = @"Edit Filter";
-        _buttonModel.minSearchRssi = -127;
-        _buttonModel.searchRssi = -127;
+        _buttonModel.minSearchRssi = -100;
+        _buttonModel.searchRssi = -100;
     }
     return _buttonModel;
 }

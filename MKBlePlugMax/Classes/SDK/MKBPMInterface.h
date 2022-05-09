@@ -175,6 +175,17 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)bpm_readTxPowerWithSucBlock:(void (^)(id returnData))sucBlock
                         failedBlock:(void (^)(NSError *error))failedBlock;
 
+/// Reset by button functions is on.
+/*
+ @{
+ @"isOn":@(YES)
+ }
+ */
+/// @param sucBlock Success callback
+/// @param failedBlock Failure callback
++ (void)bpm_readResetByButtonWithSucBlock:(void (^)(id returnData))sucBlock
+                              failedBlock:(void (^)(NSError *error))failedBlock;
+
 /// Button control function switch.
 /*
  @{
@@ -278,7 +289,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)bpm_readOverVoltageProtectionWithSucBlock:(void (^)(id returnData))sucBlock
                                       failedBlock:(void (^)(NSError *error))failedBlock;
 
-/// Read device sagvoltage protection information.
+/// Read device underVoltage protection information.
 /*
  @{
      @"isOn":@(isOn),
@@ -288,8 +299,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 /// @param sucBlock Success callback
 /// @param failedBlock Failure callback
-+ (void)bpm_readSagVoltageProtectionWithSucBlock:(void (^)(id returnData))sucBlock
-                                     failedBlock:(void (^)(NSError *error))failedBlock;
++ (void)bpm_readUnderVoltageProtectionWithSucBlock:(void (^)(id returnData))sucBlock
+                                       failedBlock:(void (^)(NSError *error))failedBlock;
 
 /// Read device overcurrent protection information.
 /*

@@ -270,7 +270,7 @@ static CGFloat const batteryIconHeight = 12.f;
         return;
     }
     if (_dataModel.underVoltage) {
-        self.stateLabel.text = @"SagVoltage";
+        self.stateLabel.text = @"UnderVoltage";
         return;
     }
     if (!_dataModel.switchStatus) {

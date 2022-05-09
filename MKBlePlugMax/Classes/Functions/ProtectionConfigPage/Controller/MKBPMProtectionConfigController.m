@@ -175,7 +175,7 @@ MKBPMProtectionTextFieldCellDelegate>
     }else if (self.pageType == bpm_protectionConfigType_overvoltage) {
         [self loadOverVoltageDatas];
     }else if (self.pageType == bpm_protectionConfigType_undervoltage) {
-        [self loadSagVoltageDatas];
+        [self loadUnderVoltageDatas];
     }else {
         [self loadOverCurrentDatas];
     }
@@ -229,13 +229,13 @@ MKBPMProtectionTextFieldCellDelegate>
     cellModel2.textValue = self.dataModel.overThreshold;
     if (self.dataModel.specification == 0) {
         //欧法
-        cellModel2.placeHolder = @"200~264";
+        cellModel2.placeHolder = @"231~264";
     }else if (self.dataModel.specification == 1) {
         //美规
-        cellModel2.placeHolder = @"100~138";
+        cellModel2.placeHolder = @"121~138";
     }else {
         //英规
-        cellModel2.placeHolder = @"200~264";
+        cellModel2.placeHolder = @"231~264";
     }
     [self.section1List addObject:cellModel2];
     
@@ -248,7 +248,7 @@ MKBPMProtectionTextFieldCellDelegate>
     [self.section1List addObject:cellModel3];
 }
 
-- (void)loadSagVoltageDatas {
+- (void)loadUnderVoltageDatas {
     MKTextSwitchCellModel *cellModel1 = [[MKTextSwitchCellModel alloc] init];
     cellModel1.index = 0;
     cellModel1.msg = @"Undervoltage Protection";

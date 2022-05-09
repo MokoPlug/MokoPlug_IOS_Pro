@@ -117,15 +117,15 @@ mk_textSwitchCellDelegate>
 
 - (void)configResetIsOn:(BOOL)isOn {
     [[MKHudManager share] showHUDWithTitle:@"Config..." inView:self.view isPenetration:NO];
-    [MKBPMInterface bpm_configResetClearEnergy:isOn
-                                      sucBlock:^{
+    [MKBPMInterface bpm_configResetByButton:isOn
+                                   sucBlock:^{
         [[MKHudManager share] hide];
         [self.view showCentralToast:@"Success"];
         self.dataModel.resetIsOn = isOn;
         MKTextSwitchCellModel *cellModel = self.dataList[1];
         cellModel.isOn = isOn;
     }
-                                   failedBlock:^(NSError * _Nonnull error) {
+                                failedBlock:^(NSError * _Nonnull error) {
         [[MKHudManager share] hide];
         [self.view showCentralToast:error.userInfo[@"errorInfo"]];
         [self.tableView reloadData];

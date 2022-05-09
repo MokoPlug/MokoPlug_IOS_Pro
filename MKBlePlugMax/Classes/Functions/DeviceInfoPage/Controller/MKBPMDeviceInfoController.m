@@ -51,10 +51,6 @@ MKBPMTextButtonCellDelegate>
     [super viewDidLoad];
     [self loadSubViews];
     [self readDataFromDevice];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(deviceStartDFUProcess)
-                                                 name:@"mk_bpm_startDfuProcessNotification"
-                                               object:nil];
 }
 
 #pragma mark - UITableViewDelegate

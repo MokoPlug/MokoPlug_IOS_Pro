@@ -52,7 +52,7 @@
             }
         }else if (self.type == bpm_protectionConfigType_undervoltage) {
             //欠压
-            if (![self readSagVoltageProtectionData]) {
+            if (![self readUnderVoltageProtectionData]) {
                 [self operationFailedBlockWithMsg:@"Read Over Value Error" block:failedBlock];
                 return;
             }
@@ -91,7 +91,7 @@
             }
         }else if (self.type == bpm_protectionConfigType_undervoltage) {
             //欠压
-            if (![self configSagVoltageProtection]) {
+            if (![self configUnderVoltageProtection]) {
                 [self operationFailedBlockWithMsg:@"Config Over Value Error" block:failedBlock];
                 return;
             }
@@ -151,9 +151,9 @@
     return success;
 }
 
-- (BOOL)readSagVoltageProtectionData {
+- (BOOL)readUnderVoltageProtectionData {
     __block BOOL success = NO;
-    [MKBPMInterface bpm_readSagVoltageProtectionWithSucBlock:^(id  _Nonnull returnData) {
+    [MKBPMInterface bpm_readUnderVoltageProtectionWithSucBlock:^(id  _Nonnull returnData) {
         success = YES;
         self.isOn = [returnData[@"result"][@"isOn"] boolValue];
         self.overThreshold = returnData[@"result"][@"overThreshold"];
@@ -166,9 +166,9 @@
     return success;
 }
 
-- (BOOL)configSagVoltageProtection {
+- (BOOL)configUnderVoltageProtection {
     __block BOOL success = NO;
-    [MKBPMInterface bpm_configSagVoltage:self.isOn productModel:self.specification overThreshold:[self.overThreshold integerValue] timeThreshold:[self.timeThreshold integerValue] sucBlock:^{
+    [MKBPMInterface bpm_configUnderVoltage:self.isOn productModel:self.specification overThreshold:[self.overThreshold integerValue] timeThreshold:[self.timeThreshold integerValue] sucBlock:^{
         success = YES;
         dispatch_semaphore_signal(self.semaphore);
     } failedBlock:^(NSError * _Nonnull error) {

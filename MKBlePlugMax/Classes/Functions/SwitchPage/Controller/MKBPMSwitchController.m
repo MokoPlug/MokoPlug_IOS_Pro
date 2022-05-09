@@ -84,8 +84,8 @@
         return;
     }
     if ([dic[@"isOn"] boolValue] != self.dataModel.isOn) {
-        self.dataModel.isOn = [dic[@"isOn"] boolValue];
         self.delayTimeLabel.hidden = YES;
+        self.dataModel.isOn = [dic[@"isOn"] boolValue];
     }
     [self updateViewState];
 }
@@ -96,7 +96,7 @@
         return;
     }
     NSInteger seconds = [dic[@"remainingTime"] integerValue];
-//    self.delayTimeLabel.hidden = (seconds == 0);
+    self.delayTimeLabel.hidden = NO;
     BOOL isOn = [dic[@"isOn"] boolValue];
     NSString *str_hour = [NSString stringWithFormat:@"%02ld",seconds/3600];
     NSString *str_minute = [NSString stringWithFormat:@"%02ld",(seconds%3600)/60];
@@ -177,6 +177,7 @@
     
     [MKBPMInterface bpm_configSwitchState:!self.dataModel.isOn sucBlock:^{
         [[MKHudManager share] hide];
+        self.delayTimeLabel.hidden = YES;
         [self.view showCentralToast:@"Success"];
     } failedBlock:^(NSError * _Nonnull error) {
         [[MKHudManager share] hide];

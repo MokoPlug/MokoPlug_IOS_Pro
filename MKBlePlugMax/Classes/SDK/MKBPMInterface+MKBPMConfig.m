@@ -177,6 +177,16 @@
                    failedBlock:failedBlock];
 }
 
++ (void)bpm_configResetByButton:(BOOL)isOn
+                       sucBlock:(void (^)(void))sucBlock
+                    failedBlock:(void (^)(NSError *error))failedBlock {
+    NSString *commandString = (isOn ? @"ed011c0101" : @"ed011c0100");
+    [self configDataWithTaskID:mk_bpm_taskConfigResetByButtonOperation
+                          data:commandString
+                      sucBlock:sucBlock
+                   failedBlock:failedBlock];
+}
+
 + (void)bpm_configButtonSwitchFunction:(BOOL)isOn
                               sucBlock:(void (^)(void))sucBlock
                            failedBlock:(void (^)(NSError *error))failedBlock {
@@ -310,12 +320,12 @@
                    failedBlock:failedBlock];
 }
 
-+ (void)bpm_configSagVoltage:(BOOL)isOn
-                productModel:(mk_bpm_productModel)productModel
-               overThreshold:(NSInteger)overThreshold
-               timeThreshold:(NSInteger)timeThreshold
-                    sucBlock:(void (^)(void))sucBlock
-                 failedBlock:(void (^)(NSError *error))failedBlock {
++ (void)bpm_configUnderVoltage:(BOOL)isOn
+                  productModel:(mk_bpm_productModel)productModel
+                 overThreshold:(NSInteger)overThreshold
+                 timeThreshold:(NSInteger)timeThreshold
+                      sucBlock:(void (^)(void))sucBlock
+                   failedBlock:(void (^)(NSError *error))failedBlock {
     NSInteger minValue = 196;
     NSInteger maxValue = 229;
     if (productModel == mk_bpm_productModel_America) {
@@ -331,7 +341,7 @@
     NSString *overValueString = [MKBLEBaseSDKAdopter fetchHexValue:overThreshold byteLen:1];
     NSString *timeValueString = [MKBLEBaseSDKAdopter fetchHexValue:timeThreshold byteLen:1];
     NSString *commandString = [NSString stringWithFormat:@"%@%@%@%@",@"ed013703",status,overValueString,timeValueString];
-    [self configDataWithTaskID:mk_bpm_taskConfigSagVoltageOperation
+    [self configDataWithTaskID:mk_bpm_taskConfigUnderVoltageOperation
                           data:commandString
                       sucBlock:sucBlock
                    failedBlock:failedBlock];

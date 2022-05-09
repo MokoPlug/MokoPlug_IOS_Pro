@@ -73,7 +73,6 @@
         return;
     }
     //抛出该通知，设备信息页面再次返回不需要读取任何数据了，防止出现读取错误
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"mk_bpm_startDfuProcessNotification" object:nil];
     NSString *document = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     NSString *filePath = [document stringByAppendingPathComponent:firmwareModel.leftMsg];
     self.leftButton.enabled = NO;

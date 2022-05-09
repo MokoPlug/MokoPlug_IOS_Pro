@@ -335,7 +335,7 @@ mk_textSwitchCellDelegate>
                               isPenetration:NO];
     [MKBPMInterface bpm_factoryResetWithSucBlock:^{
         [[MKHudManager share] hide];
-        [self.view showCentralToast:@"Factory reset successfully!Please reconnect the device."];
+//        [self.view showCentralToast:@"Factory reset successfully!Please reconnect the device."];
     } failedBlock:^(NSError * _Nonnull error) {
         [[MKHudManager share] hide];
         [self.view showCentralToast:error.userInfo[@"errorInfo"]];
@@ -367,7 +367,9 @@ mk_textSwitchCellDelegate>
                                                                        message:msg
                                                                 preferredStyle:UIAlertControllerStyleAlert];
     alertView.notificationName = @"mk_bpm_needDismissAlert";
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        [self.tableView mk_reloadRow:1 inSection:1 withRowAnimation:UITableViewRowAnimationNone];
+    }];
     [alertView addAction:cancelAction];
     @weakify(self);
     UIAlertAction *moreAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -404,7 +406,9 @@ mk_textSwitchCellDelegate>
                                                                        message:msg
                                                                 preferredStyle:UIAlertControllerStyleAlert];
     alertView.notificationName = @"mk_bpm_needDismissAlert";
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        [self.tableView mk_reloadRow:0 inSection:5 withRowAnimation:UITableViewRowAnimationNone];
+    }];
     [alertView addAction:cancelAction];
     @weakify(self);
     UIAlertAction *moreAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -520,7 +524,7 @@ mk_textSwitchCellDelegate>
         return;
     }
     if (![password isEqualToString:confirmpassword]) {
-        [self.view showCentralToast:@"Password do not match! Please try again."];
+        [self.view showCentralToast:@"Password do not match!"];
         return;
     }
     [[MKHudManager share] showHUDWithTitle:@"Setting..."

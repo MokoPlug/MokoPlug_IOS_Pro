@@ -101,6 +101,14 @@ NS_ASSUME_NONNULL_BEGIN
                  sucBlock:(void (^)(void))sucBlock
               failedBlock:(void (^)(NSError *error))failedBlock;
 
+/// Reset by button.
+/// @param isOn isOn
+/// @param sucBlock Success callback
+/// @param failedBlock Failure callback
++ (void)bpm_configResetByButton:(BOOL)isOn
+                       sucBlock:(void (^)(void))sucBlock
+                    failedBlock:(void (^)(NSError *error))failedBlock;
+
 /// Button control function switch.
 /// @param isOn isOn
 /// @param sucBlock Success callback
@@ -177,19 +185,19 @@ NS_ASSUME_NONNULL_BEGIN
                      sucBlock:(void (^)(void))sucBlock
                   failedBlock:(void (^)(NSError *error))failedBlock;
 
-/// Configure device sagvoltage protection information.
+/// Configure device underVoltage protection information.
 /// @param isOn Open function
 /// @param productModel Specification and model of the equipment
-/// @param overThreshold Sagvoltage protection value, Europe and France: 196~229V, U.K: 196~229V, America: 102~119V.
+/// @param overThreshold UnderVoltage protection value, Europe and France: 196~229V, U.K: 196~229V, America: 102~119V.
 /// @param timeThreshold 1s~30s
 /// @param sucBlock Success callback
 /// @param failedBlock Failure callback
-+ (void)bpm_configSagVoltage:(BOOL)isOn
-                productModel:(mk_bpm_productModel)productModel
-               overThreshold:(NSInteger)overThreshold
-               timeThreshold:(NSInteger)timeThreshold
-                    sucBlock:(void (^)(void))sucBlock
-                 failedBlock:(void (^)(NSError *error))failedBlock;
++ (void)bpm_configUnderVoltage:(BOOL)isOn
+                  productModel:(mk_bpm_productModel)productModel
+                 overThreshold:(NSInteger)overThreshold
+                 timeThreshold:(NSInteger)timeThreshold
+                      sucBlock:(void (^)(void))sucBlock
+                   failedBlock:(void (^)(NSError *error))failedBlock;
 
 /// Configure device overcurrent protection information.
 /// @param isOn Open function

@@ -172,6 +172,13 @@
         NSString *txPower = [MKBPMSDKDataAdopter fetchTxPowerValueString:content];
         resultDic = @{@"txPower":txPower};
         operationID = mk_bpm_taskReadTxPowerOperation;
+    }else if ([cmd isEqualToString:@"1c"]) {
+        //读取按键恢复出厂设置
+        BOOL isOn = ([content isEqualToString:@"01"]);
+        resultDic = @{
+            @"isOn":@(isOn),
+        };
+        operationID = mk_bpm_taskReadResetByButtonOperation;
     }else if ([cmd isEqualToString:@"1d"]) {
         //读取按键控制功能开关
         BOOL isOn = ([content isEqualToString:@"01"]);
@@ -249,7 +256,7 @@
             @"overThreshold":overThreshold,
             @"timeThreshold":timeThreshold,
         };
-        operationID = mk_bpm_taskReadSagVoltageProtectionOperation;
+        operationID = mk_bpm_taskReadUnderVoltageProtectionOperation;
     }else if ([cmd isEqualToString:@"38"]) {
         //读取过流保护信息
         BOOL isOn = ([[content substringWithRange:NSMakeRange(0, 2)] isEqualToString:@"01"]);
@@ -389,6 +396,9 @@
     }else if ([cmd isEqualToString:@"1b"]) {
         //配置TxPower
         operationID = mk_bpm_taskConfigTxPowerOperation;
+    }else if ([cmd isEqualToString:@"1c"]) {
+        //配置按键恢复出厂设置
+        operationID = mk_bpm_taskConfigResetByButtonOperation;
     }else if ([cmd isEqualToString:@"1d"]) {
         //配置按键控制功能开关
         operationID = mk_bpm_taskConfigButtonSwitchFunctionOperation;
@@ -415,7 +425,7 @@
         operationID = mk_bpm_taskConfigOverVoltageOperation;
     }else if ([cmd isEqualToString:@"37"]) {
         //配置欠压保护信息
-        operationID = mk_bpm_taskConfigSagVoltageOperation;
+        operationID = mk_bpm_taskConfigUnderVoltageOperation;
     }else if ([cmd isEqualToString:@"38"]) {
         //配置过流保护信息
         operationID = mk_bpm_taskConfigOverCurrentOperation;

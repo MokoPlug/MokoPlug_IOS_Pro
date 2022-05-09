@@ -158,6 +158,14 @@
                  failedBlock:failedBlock];
 }
 
++ (void)bpm_readResetByButtonWithSucBlock:(void (^)(id returnData))sucBlock
+                              failedBlock:(void (^)(NSError *error))failedBlock {
+    [self readDataWithTaskID:mk_bpm_taskReadResetByButtonOperation
+                     cmdFlag:@"1c"
+                    sucBlock:sucBlock
+                 failedBlock:failedBlock];
+}
+
 + (void)bpm_readButtonSwitchFunctionWithSucBlock:(void (^)(id returnData))sucBlock
                                      failedBlock:(void (^)(NSError *error))failedBlock {
     [self readDataWithTaskID:mk_bpm_taskReadButtonSwitchFunctionOperation
@@ -230,9 +238,9 @@
                  failedBlock:failedBlock];
 }
 
-+ (void)bpm_readSagVoltageProtectionWithSucBlock:(void (^)(id returnData))sucBlock
-                                     failedBlock:(void (^)(NSError *error))failedBlock {
-    [self readDataWithTaskID:mk_bpm_taskReadSagVoltageProtectionOperation
++ (void)bpm_readUnderVoltageProtectionWithSucBlock:(void (^)(id returnData))sucBlock
+                                       failedBlock:(void (^)(NSError *error))failedBlock {
+    [self readDataWithTaskID:mk_bpm_taskReadUnderVoltageProtectionOperation
                      cmdFlag:@"37"
                     sucBlock:sucBlock
                  failedBlock:failedBlock];
