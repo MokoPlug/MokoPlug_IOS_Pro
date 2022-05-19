@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/aadyx2007@163.com/MKBlePlugMax'
+  s.homepage         = 'https://github.com/MokoPlug/MokoPlug_IOS_Pro'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'aadyx2007@163.com' => 'aadyx2007@163.com' }
-  s.source           = { :git => 'https://github.com/aadyx2007@163.com/MKBlePlugMax.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/MokoPlug/MokoPlug_IOS_Pro.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
