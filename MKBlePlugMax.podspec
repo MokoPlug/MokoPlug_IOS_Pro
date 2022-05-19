@@ -378,6 +378,7 @@ TODO: Add long description of the pod here.
     ss.dependency 'MKBlePlugMax/SDK'
     ss.dependency 'MKBlePlugMax/ConnectModule'
     ss.dependency 'MKBlePlugMax/Expand'
+    ss.dependency 'MKBlePlugMax/CTMediator'
   
     ss.dependency 'MKBaseModuleLibrary'
     ss.dependency 'MKCustomUIModule'
