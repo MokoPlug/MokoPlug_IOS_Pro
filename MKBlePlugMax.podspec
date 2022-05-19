@@ -103,6 +103,8 @@ TODO: Add long description of the pod here.
     
       sss.subspec 'View' do |ssss|
         ssss.source_files = 'MKBlePlugMax/Classes/Functions/AboutPage/View/**'
+        
+        ssss.dependency 'MKBlePlugMax/Functions/AboutPage/Model'
       end
     end
     
