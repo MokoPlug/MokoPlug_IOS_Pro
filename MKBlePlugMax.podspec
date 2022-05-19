@@ -278,6 +278,7 @@ TODO: Add long description of the pod here.
     
       sss.subspec 'Model' do |ssss|
         ssss.source_files = 'MKBlePlugMax/Classes/Functions/ProtectionConfigPage/Model/**'
+        ssss.dependency 'MKBlePlugMax/Functions/ProtectionConfigPage/Header'
       end
       
       sss.subspec 'Header' do |ssss|
