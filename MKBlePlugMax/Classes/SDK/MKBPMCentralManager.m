@@ -572,7 +572,7 @@ static dispatch_once_t onceToken;
     }
     if ([cmd isEqualToString:@"06"]) {
         //最近30天电能
-        NSDictionary *dic = [MKBPMSDKDataAdopter parseHourlyEnergyDatas:dataContent];
+        NSDictionary *dic = [MKBPMSDKDataAdopter parseDailyEnergyDatas:dataContent];
         [[NSNotificationCenter defaultCenter] postNotificationName:mk_bpm_receiveMonthlyEnergyDataNotification
                                                             object:nil
                                                           userInfo:dic];

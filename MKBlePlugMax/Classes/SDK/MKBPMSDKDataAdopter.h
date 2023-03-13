@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSDictionary *)parseHourlyEnergyDatas:(NSString *)content;
 
++ (NSDictionary *)parseDailyEnergyDatas:(NSString *)content;
+
 + (BOOL)validTimeProtocol:(id <mk_bpm_deviceTimeProtocol>)protocol;
 
 + (NSString *)getTimeString:(id <mk_bpm_deviceTimeProtocol>)protocol;

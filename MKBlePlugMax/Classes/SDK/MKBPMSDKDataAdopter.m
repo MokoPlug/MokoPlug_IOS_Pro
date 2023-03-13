@@ -119,6 +119,41 @@
     NSString *subContent = [content substringFromIndex:12];
     NSMutableArray *energyList = [NSMutableArray array];
     for (NSInteger i = 0; i < [number integerValue]; i ++) {
+        NSInteger energyValue = [MKBLEBaseSDKAdopter getDecimalWithHex:subContent range:NSMakeRange(i * 4, 4)];
+        NSString *energy = [NSString stringWithFormat:@"%.3f",(energyValue * 0.001)];
+        [energyList addObject:energy];
+    }
+    return @{
+        @"year":year,
+        @"month":month,
+        @"day":day,
+        @"hour":hour,
+        @"number":number,
+        @"energyList":energyList
+    };
+}
+
++ (NSDictionary *)parseDailyEnergyDatas:(NSString *)content {
+    if (!MKValidStr(content) || content.length < 16) {
+        return @{};
+    }
+    NSString *year = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(0, 4)];
+    NSString *month = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(4, 2)];
+    if (month.length == 1) {
+        month = [@"0" stringByAppendingString:month];
+    }
+    NSString *day = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(6, 2)];
+    if (day.length == 1) {
+        day = [@"0" stringByAppendingString:day];
+    }
+    NSString *hour = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(8, 2)];
+    if (hour.length == 1) {
+        hour = [@"0" stringByAppendingString:hour];
+    }
+    NSString *number = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(10, 2)];
+    NSString *subContent = [content substringFromIndex:12];
+    NSMutableArray *energyList = [NSMutableArray array];
+    for (NSInteger i = 0; i < [number integerValue]; i ++) {
         NSInteger energyValue = [MKBLEBaseSDKAdopter getDecimalWithHex:subContent range:NSMakeRange(i * 6, 6)];
         NSString *energy = [NSString stringWithFormat:@"%.3f",(energyValue * 0.001)];
         [energyList addObject:energy];

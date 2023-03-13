@@ -345,7 +345,7 @@
         operationID = mk_bpm_taskReadTotalEnergyDataOperation;
     }else if ([cmd isEqualToString:@"5d"]) {
         //查询最近30天的电能数据
-        resultDic = [MKBPMSDKDataAdopter parseHourlyEnergyDatas:content];
+        resultDic = [MKBPMSDKDataAdopter parseDailyEnergyDatas:content];
         operationID = mk_bpm_taskReadMonthlyEnergyDataOperation;
     }else if ([cmd isEqualToString:@"5e"]) {
         //查询当天每小时电能数据
