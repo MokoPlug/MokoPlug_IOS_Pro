@@ -147,7 +147,7 @@
         [self.dataList addObject:cellModel];
     }
     self.timeLabel.text = [NSString stringWithFormat:@"%@ to %@",startTime,endTime];
-    NSString *totalValueString = [NSString stringWithFormat:@"%.2f",totalValue];
+    NSString *totalValueString = [NSString stringWithFormat:@"%.3f",totalValue];
     self.energyLabel.attributedText = [MKCustomUIAdopter attributedString:@[@"Last 30 days energy: ",totalValueString,@"KWh"]
                                                                     fonts:@[MKFont(13.f),MKFont(17.f),MKFont(17.f)]
                                                                    colors:@[DEFAULT_TEXT_COLOR,NAVBAR_COLOR_MACROS,NAVBAR_COLOR_MACROS]];

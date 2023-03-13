@@ -7,44 +7,44 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.7.5)
-  - MKBaseBleModule (1.1.1)
-  - MKBaseModuleLibrary (1.1.4):
-    - MKBaseModuleLibrary/Base (= 1.1.4)
-    - MKBaseModuleLibrary/Category (= 1.1.4)
-    - MKBaseModuleLibrary/Defines (= 1.1.4)
-    - MKBaseModuleLibrary/Tools (= 1.1.4)
-  - MKBaseModuleLibrary/Base (1.1.4):
-    - MKBaseModuleLibrary/Base/Cell (= 1.1.4)
-    - MKBaseModuleLibrary/Base/Controller (= 1.1.4)
-    - MKBaseModuleLibrary/Base/NavigationController (= 1.1.4)
-    - MKBaseModuleLibrary/Base/View (= 1.1.4)
-  - MKBaseModuleLibrary/Base/Cell (1.1.4):
-    - MKBaseModuleLibrary/Base/Cell/MKBaseCell (= 1.1.4)
-  - MKBaseModuleLibrary/Base/Cell/MKBaseCell (1.1.4):
+  - MKBaseBleModule (1.1.4)
+  - MKBaseModuleLibrary (1.1.6):
+    - MKBaseModuleLibrary/Base (= 1.1.6)
+    - MKBaseModuleLibrary/Category (= 1.1.6)
+    - MKBaseModuleLibrary/Defines (= 1.1.6)
+    - MKBaseModuleLibrary/Tools (= 1.1.6)
+  - MKBaseModuleLibrary/Base (1.1.6):
+    - MKBaseModuleLibrary/Base/Cell (= 1.1.6)
+    - MKBaseModuleLibrary/Base/Controller (= 1.1.6)
+    - MKBaseModuleLibrary/Base/NavigationController (= 1.1.6)
+    - MKBaseModuleLibrary/Base/View (= 1.1.6)
+  - MKBaseModuleLibrary/Base/Cell (1.1.6):
+    - MKBaseModuleLibrary/Base/Cell/MKBaseCell (= 1.1.6)
+  - MKBaseModuleLibrary/Base/Cell/MKBaseCell (1.1.6):
     - Masonry
     - MKBaseModuleLibrary/Defines
-  - MKBaseModuleLibrary/Base/Controller (1.1.4):
+  - MKBaseModuleLibrary/Base/Controller (1.1.6):
     - MKBaseModuleLibrary/Category
     - MKBaseModuleLibrary/Defines
     - WRNavigationBar
-  - MKBaseModuleLibrary/Base/NavigationController (1.1.4)
-  - MKBaseModuleLibrary/Base/View (1.1.4):
-    - MKBaseModuleLibrary/Base/View/CollectionView (= 1.1.4)
-    - MKBaseModuleLibrary/Base/View/TableView (= 1.1.4)
-  - MKBaseModuleLibrary/Base/View/CollectionView (1.1.4)
-  - MKBaseModuleLibrary/Base/View/TableView (1.1.4)
-  - MKBaseModuleLibrary/Category (1.1.4):
+  - MKBaseModuleLibrary/Base/NavigationController (1.1.6)
+  - MKBaseModuleLibrary/Base/View (1.1.6):
+    - MKBaseModuleLibrary/Base/View/CollectionView (= 1.1.6)
+    - MKBaseModuleLibrary/Base/View/TableView (= 1.1.6)
+  - MKBaseModuleLibrary/Base/View/CollectionView (1.1.6)
+  - MKBaseModuleLibrary/Base/View/TableView (1.1.6)
+  - MKBaseModuleLibrary/Category (1.1.6):
     - MKBaseModuleLibrary/Defines
     - MKBaseModuleLibrary/Tools/MKClassInfo
     - Toast
-  - MKBaseModuleLibrary/Defines (1.1.4)
-  - MKBaseModuleLibrary/Tools (1.1.4):
-    - MKBaseModuleLibrary/Tools/MKClassInfo (= 1.1.4)
-    - MKBaseModuleLibrary/Tools/MKDateFormatter (= 1.1.4)
-    - MKBaseModuleLibrary/Tools/MKModuleManager (= 1.1.4)
-  - MKBaseModuleLibrary/Tools/MKClassInfo (1.1.4)
-  - MKBaseModuleLibrary/Tools/MKDateFormatter (1.1.4)
-  - MKBaseModuleLibrary/Tools/MKModuleManager (1.1.4)
+  - MKBaseModuleLibrary/Defines (1.1.6)
+  - MKBaseModuleLibrary/Tools (1.1.6):
+    - MKBaseModuleLibrary/Tools/MKClassInfo (= 1.1.6)
+    - MKBaseModuleLibrary/Tools/MKDateFormatter (= 1.1.6)
+    - MKBaseModuleLibrary/Tools/MKModuleManager (= 1.1.6)
+  - MKBaseModuleLibrary/Tools/MKClassInfo (1.1.6)
+  - MKBaseModuleLibrary/Tools/MKDateFormatter (1.1.6)
+  - MKBaseModuleLibrary/Tools/MKModuleManager (1.1.6)
   - MKBlePlugMax (0.0.1):
     - MKBlePlugMax/ConnectModule (= 0.0.1)
     - MKBlePlugMax/CTMediator (= 0.0.1)
@@ -90,6 +90,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/AboutPage (= 0.0.1)
     - MKBlePlugMax/Functions/AdvertisementPage (= 0.0.1)
@@ -118,6 +119,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/AboutPage/Controller (= 0.0.1)
     - MKBlePlugMax/Functions/AboutPage/Model (= 0.0.1)
@@ -129,6 +131,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/AboutPage/Model
     - MKBlePlugMax/Functions/AboutPage/View
@@ -139,6 +142,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -147,7 +151,9 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
+    - MKBlePlugMax/Functions/AboutPage/Model
     - MKBlePlugMax/SDK
     - MKCustomUIModule
     - MLInputDodger
@@ -155,6 +161,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/AdvertisementPage/Controller (= 0.0.1)
     - MKBlePlugMax/Functions/AdvertisementPage/Model (= 0.0.1)
@@ -166,6 +173,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/AdvertisementPage/Model
     - MKBlePlugMax/Functions/AdvertisementPage/View
@@ -176,6 +184,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -184,6 +193,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -192,6 +202,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/BleConnectedIndicatorPage/Controller (= 0.0.1)
     - MKBlePlugMax/SDK
@@ -201,6 +212,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -209,6 +221,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/ButtonSettingPage/Controller (= 0.0.1)
     - MKBlePlugMax/Functions/ButtonSettingPage/Model (= 0.0.1)
@@ -219,6 +232,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/ButtonSettingPage/Model
     - MKBlePlugMax/SDK
@@ -228,6 +242,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -236,6 +251,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/DeviceInfoPage/Controller (= 0.0.1)
     - MKBlePlugMax/Functions/DeviceInfoPage/Model (= 0.0.1)
@@ -246,6 +262,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/DeviceInfoPage/Model
     - MKBlePlugMax/Functions/UpdatePage/Controller
@@ -256,6 +273,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -264,6 +282,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/EnergyPage/Controller (= 0.0.1)
     - MKBlePlugMax/Functions/EnergyPage/Model (= 0.0.1)
@@ -275,6 +294,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/EnergyPage/Model
     - MKBlePlugMax/Functions/EnergyPage/View
@@ -286,6 +306,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -294,6 +315,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -302,6 +324,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/EnergyReportPage/Controller (= 0.0.1)
     - MKBlePlugMax/Functions/EnergyReportPage/Model (= 0.0.1)
@@ -312,6 +335,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/EnergyReportPage/Model
     - MKBlePlugMax/SDK
@@ -321,6 +345,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -329,6 +354,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/IndicatorColorPage/Controller (= 0.0.1)
     - MKBlePlugMax/Functions/IndicatorColorPage/Model (= 0.0.1)
@@ -340,6 +366,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/IndicatorColorPage/Model
     - MKBlePlugMax/Functions/IndicatorColorPage/View
@@ -350,6 +377,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -358,6 +386,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -366,6 +395,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/IndicatorPage/Controller (= 0.0.1)
     - MKBlePlugMax/Functions/IndicatorPage/Model (= 0.0.1)
@@ -377,6 +407,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/BleConnectedIndicatorPage/Controller
     - MKBlePlugMax/Functions/IndicatorColorPage/Controller
@@ -389,6 +420,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -397,6 +429,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -405,6 +438,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/LoadStatusPage/Controller (= 0.0.1)
     - MKBlePlugMax/Functions/LoadStatusPage/Model (= 0.0.1)
@@ -415,6 +449,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/LoadStatusPage/Model
     - MKBlePlugMax/SDK
@@ -424,6 +459,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -432,6 +468,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/PeriodicalReportingPage/Controller (= 0.0.1)
     - MKBlePlugMax/Functions/PeriodicalReportingPage/Model (= 0.0.1)
@@ -442,6 +479,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/PeriodicalReportingPage/Model
     - MKBlePlugMax/SDK
@@ -451,6 +489,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -459,6 +498,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/PowerOnMode/Controller (= 0.0.1)
     - MKBlePlugMax/SDK
@@ -468,6 +508,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -476,6 +517,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/PowerPage/Controller (= 0.0.1)
     - MKBlePlugMax/Functions/PowerPage/Model (= 0.0.1)
@@ -486,6 +528,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/PowerPage/Model
     - MKBlePlugMax/Functions/SettingPage/Controller
@@ -496,6 +539,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -504,6 +548,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/ProtectionConfigPage/Controller (= 0.0.1)
     - MKBlePlugMax/Functions/ProtectionConfigPage/Header (= 0.0.1)
@@ -515,6 +560,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/ProtectionConfigPage/Header
     - MKBlePlugMax/Functions/ProtectionConfigPage/Model
@@ -525,6 +571,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -533,7 +580,9 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
+    - MKBlePlugMax/Functions/ProtectionConfigPage/Header
     - MKBlePlugMax/SDK
     - MKCustomUIModule
     - MLInputDodger
@@ -541,6 +590,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/ProtectionSwitchPage/Controller (= 0.0.1)
     - MKBlePlugMax/SDK
@@ -550,6 +600,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/ProtectionConfigPage/Controller
     - MKBlePlugMax/SDK
@@ -559,6 +610,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/ScanPage/Controller (= 0.0.1)
     - MKBlePlugMax/Functions/ScanPage/Model (= 0.0.1)
@@ -570,8 +622,8 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
-    - MKBlePlugMax/Functions/AboutPage/Controller
     - MKBlePlugMax/Functions/ScanPage/Model
     - MKBlePlugMax/Functions/ScanPage/View
     - MKBlePlugMax/Functions/TabBarPage/Controller
@@ -582,6 +634,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -590,6 +643,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/ScanPage/Model
     - MKBlePlugMax/SDK
@@ -599,6 +653,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/SettingPage/Controller (= 0.0.1)
     - MKBlePlugMax/Functions/SettingPage/Model (= 0.0.1)
@@ -609,6 +664,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/AdvertisementPage/Controller
     - MKBlePlugMax/Functions/ButtonSettingPage/Controller
@@ -627,6 +683,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -635,6 +692,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/SwitchPage/Controller (= 0.0.1)
     - MKBlePlugMax/Functions/SwitchPage/Model (= 0.0.1)
@@ -645,6 +703,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/SettingPage/Controller
     - MKBlePlugMax/Functions/SwitchPage/Model
@@ -655,6 +714,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -663,6 +723,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/TabBarPage/Controller (= 0.0.1)
     - MKBlePlugMax/SDK
@@ -672,6 +733,7 @@ PODS:
     - HHTransition
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/EnergyPage/Controller
     - MKBlePlugMax/Functions/PowerPage/Controller
@@ -684,6 +746,7 @@ PODS:
     - iOSDFULibrary
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/UpdatePage/Controller (= 0.0.1)
     - MKBlePlugMax/Functions/UpdatePage/Model (= 0.0.1)
@@ -695,6 +758,7 @@ PODS:
     - iOSDFULibrary
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/Functions/UpdatePage/Model
     - MKBlePlugMax/SDK
@@ -705,6 +769,7 @@ PODS:
     - iOSDFULibrary
     - MKBaseModuleLibrary
     - MKBlePlugMax/ConnectModule
+    - MKBlePlugMax/CTMediator
     - MKBlePlugMax/Expand
     - MKBlePlugMax/SDK
     - MKCustomUIModule
@@ -713,47 +778,47 @@ PODS:
     - MKBaseBleModule
   - MKBlePlugMax/Target (0.0.1):
     - MKBlePlugMax/Functions
-  - MKCustomUIModule (1.4.0):
+  - MKCustomUIModule (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-    - MKCustomUIModule/Cell (= 1.4.0)
-    - MKCustomUIModule/Controller (= 1.4.0)
-    - MKCustomUIModule/MQTTServerView (= 1.4.0)
-    - MKCustomUIModule/UIAdopter (= 1.4.0)
-    - MKCustomUIModule/View (= 1.4.0)
-  - MKCustomUIModule/Cell (1.4.0):
+    - MKCustomUIModule/Cell (= 1.4.4)
+    - MKCustomUIModule/Controller (= 1.4.4)
+    - MKCustomUIModule/MQTTServerView (= 1.4.4)
+    - MKCustomUIModule/UIAdopter (= 1.4.4)
+    - MKCustomUIModule/View (= 1.4.4)
+  - MKCustomUIModule/Cell (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-    - MKCustomUIModule/Cell/LoRaCell (= 1.4.0)
-    - MKCustomUIModule/Cell/NormalCell (= 1.4.0)
-  - MKCustomUIModule/Cell/LoRaCell (1.4.0):
+    - MKCustomUIModule/Cell/LoRaCell (= 1.4.4)
+    - MKCustomUIModule/Cell/NormalCell (= 1.4.4)
+  - MKCustomUIModule/Cell/LoRaCell (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-    - MKCustomUIModule/Cell/LoRaCell/MKAdvancedSettingCell (= 1.4.0)
-    - MKCustomUIModule/Cell/LoRaCell/MKFilterConditionCell (= 1.4.0)
-    - MKCustomUIModule/Cell/LoRaCell/MKFilterDataCell (= 1.4.0)
-    - MKCustomUIModule/Cell/LoRaCell/MKFilterRawAdvDataCell (= 1.4.0)
-    - MKCustomUIModule/Cell/LoRaCell/MKLoraDeviceTypeCell (= 1.4.0)
-    - MKCustomUIModule/Cell/LoRaCell/MKLoRaSettingCHCell (= 1.4.0)
-    - MKCustomUIModule/Cell/LoRaCell/MKMeasureTxPowerCell (= 1.4.0)
-    - MKCustomUIModule/Cell/LoRaCell/MKMixedChoiceCell (= 1.4.0)
-    - MKCustomUIModule/Cell/LoRaCell/MKRawAdvDataOperationCell (= 1.4.0)
-  - MKCustomUIModule/Cell/LoRaCell/MKAdvancedSettingCell (1.4.0):
+    - MKCustomUIModule/Cell/LoRaCell/MKAdvancedSettingCell (= 1.4.4)
+    - MKCustomUIModule/Cell/LoRaCell/MKFilterConditionCell (= 1.4.4)
+    - MKCustomUIModule/Cell/LoRaCell/MKFilterDataCell (= 1.4.4)
+    - MKCustomUIModule/Cell/LoRaCell/MKFilterRawAdvDataCell (= 1.4.4)
+    - MKCustomUIModule/Cell/LoRaCell/MKLoraDeviceTypeCell (= 1.4.4)
+    - MKCustomUIModule/Cell/LoRaCell/MKLoRaSettingCHCell (= 1.4.4)
+    - MKCustomUIModule/Cell/LoRaCell/MKMeasureTxPowerCell (= 1.4.4)
+    - MKCustomUIModule/Cell/LoRaCell/MKMixedChoiceCell (= 1.4.4)
+    - MKCustomUIModule/Cell/LoRaCell/MKRawAdvDataOperationCell (= 1.4.4)
+  - MKCustomUIModule/Cell/LoRaCell/MKAdvancedSettingCell (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/Cell/LoRaCell/MKFilterConditionCell (1.4.0):
+  - MKCustomUIModule/Cell/LoRaCell/MKFilterConditionCell (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
@@ -761,66 +826,34 @@ PODS:
     - MKBaseModuleLibrary
     - MKCustomUIModule/UIAdopter
     - MKCustomUIModule/View/MKPickerView
-  - MKCustomUIModule/Cell/LoRaCell/MKFilterDataCell (1.4.0):
+  - MKCustomUIModule/Cell/LoRaCell/MKFilterDataCell (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule/View/MKTextField
-  - MKCustomUIModule/Cell/LoRaCell/MKFilterRawAdvDataCell (1.4.0):
+  - MKCustomUIModule/Cell/LoRaCell/MKFilterRawAdvDataCell (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule/View/MKTextField
-  - MKCustomUIModule/Cell/LoRaCell/MKLoraDeviceTypeCell (1.4.0):
+  - MKCustomUIModule/Cell/LoRaCell/MKLoraDeviceTypeCell (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/Cell/LoRaCell/MKLoRaSettingCHCell (1.4.0):
+  - MKCustomUIModule/Cell/LoRaCell/MKLoRaSettingCHCell (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule/View/MKPickerView
-  - MKCustomUIModule/Cell/LoRaCell/MKMeasureTxPowerCell (1.4.0):
-    - CircleProgressBar
-    - Masonry
-    - MBProgressHUD
-    - MJRefresh
-    - MKBaseModuleLibrary
-    - MKCustomUIModule/UIAdopter
-    - MKCustomUIModule/View/MKSlider
-  - MKCustomUIModule/Cell/LoRaCell/MKMixedChoiceCell (1.4.0):
-    - CircleProgressBar
-    - Masonry
-    - MBProgressHUD
-    - MJRefresh
-    - MKBaseModuleLibrary
-  - MKCustomUIModule/Cell/LoRaCell/MKRawAdvDataOperationCell (1.4.0):
-    - CircleProgressBar
-    - Masonry
-    - MBProgressHUD
-    - MJRefresh
-    - MKBaseModuleLibrary
-  - MKCustomUIModule/Cell/NormalCell (1.4.0):
-    - CircleProgressBar
-    - Masonry
-    - MBProgressHUD
-    - MJRefresh
-    - MKBaseModuleLibrary
-    - MKCustomUIModule/Cell/NormalCell/MKNormalSliderCell (= 1.4.0)
-    - MKCustomUIModule/Cell/NormalCell/MKNormalTextCell (= 1.4.0)
-    - MKCustomUIModule/Cell/NormalCell/MKSettingTextCell (= 1.4.0)
-    - MKCustomUIModule/Cell/NormalCell/MKTextButtonCell (= 1.4.0)
-    - MKCustomUIModule/Cell/NormalCell/MKTextFieldCell (= 1.4.0)
-    - MKCustomUIModule/Cell/NormalCell/MKTextSwitchCell (= 1.4.0)
-  - MKCustomUIModule/Cell/NormalCell/MKNormalSliderCell (1.4.0):
+  - MKCustomUIModule/Cell/LoRaCell/MKMeasureTxPowerCell (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
@@ -828,73 +861,112 @@ PODS:
     - MKBaseModuleLibrary
     - MKCustomUIModule/UIAdopter
     - MKCustomUIModule/View/MKSlider
-  - MKCustomUIModule/Cell/NormalCell/MKNormalTextCell (1.4.0):
+  - MKCustomUIModule/Cell/LoRaCell/MKMixedChoiceCell (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/Cell/NormalCell/MKSettingTextCell (1.4.0):
+  - MKCustomUIModule/Cell/LoRaCell/MKRawAdvDataOperationCell (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/Cell/NormalCell/MKTextButtonCell (1.4.0):
+  - MKCustomUIModule/Cell/NormalCell (1.4.4):
+    - CircleProgressBar
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MKBaseModuleLibrary
+    - MKCustomUIModule/Cell/NormalCell/MKButtonMsgCell (= 1.4.4)
+    - MKCustomUIModule/Cell/NormalCell/MKNormalSliderCell (= 1.4.4)
+    - MKCustomUIModule/Cell/NormalCell/MKNormalTextCell (= 1.4.4)
+    - MKCustomUIModule/Cell/NormalCell/MKSettingTextCell (= 1.4.4)
+    - MKCustomUIModule/Cell/NormalCell/MKTextButtonCell (= 1.4.4)
+    - MKCustomUIModule/Cell/NormalCell/MKTextFieldCell (= 1.4.4)
+    - MKCustomUIModule/Cell/NormalCell/MKTextSwitchCell (= 1.4.4)
+  - MKCustomUIModule/Cell/NormalCell/MKButtonMsgCell (1.4.4):
+    - CircleProgressBar
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MKBaseModuleLibrary
+  - MKCustomUIModule/Cell/NormalCell/MKNormalSliderCell (1.4.4):
+    - CircleProgressBar
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MKBaseModuleLibrary
+    - MKCustomUIModule/UIAdopter
+    - MKCustomUIModule/View/MKSlider
+  - MKCustomUIModule/Cell/NormalCell/MKNormalTextCell (1.4.4):
+    - CircleProgressBar
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MKBaseModuleLibrary
+  - MKCustomUIModule/Cell/NormalCell/MKSettingTextCell (1.4.4):
+    - CircleProgressBar
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MKBaseModuleLibrary
+  - MKCustomUIModule/Cell/NormalCell/MKTextButtonCell (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule/View/MKPickerView
-  - MKCustomUIModule/Cell/NormalCell/MKTextFieldCell (1.4.0):
+  - MKCustomUIModule/Cell/NormalCell/MKTextFieldCell (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule/View/MKTextField
-  - MKCustomUIModule/Cell/NormalCell/MKTextSwitchCell (1.4.0):
+  - MKCustomUIModule/Cell/NormalCell/MKTextSwitchCell (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/Controller (1.4.0):
+  - MKCustomUIModule/Controller (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-    - MKCustomUIModule/Controller/CASelectPage (= 1.4.0)
-    - MKCustomUIModule/Controller/MKAboutPage (= 1.4.0)
-    - MKCustomUIModule/Controller/MKAlertController (= 1.4.0)
-    - MKCustomUIModule/Controller/MKTrackerAboutPage (= 1.4.0)
-    - MKCustomUIModule/Controller/MKTrackerLogPage (= 1.4.0)
-  - MKCustomUIModule/Controller/CASelectPage (1.4.0):
+    - MKCustomUIModule/Controller/CASelectPage (= 1.4.4)
+    - MKCustomUIModule/Controller/MKAboutPage (= 1.4.4)
+    - MKCustomUIModule/Controller/MKAlertController (= 1.4.4)
+    - MKCustomUIModule/Controller/MKTrackerAboutPage (= 1.4.4)
+    - MKCustomUIModule/Controller/MKTrackerLogPage (= 1.4.4)
+  - MKCustomUIModule/Controller/CASelectPage (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-    - MKCustomUIModule/Controller/CASelectPage/Controller (= 1.4.0)
-  - MKCustomUIModule/Controller/CASelectPage/Controller (1.4.0):
+    - MKCustomUIModule/Controller/CASelectPage/Controller (= 1.4.4)
+  - MKCustomUIModule/Controller/CASelectPage/Controller (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule/Cell/NormalCell/MKNormalTextCell
-  - MKCustomUIModule/Controller/MKAboutPage (1.4.0):
+  - MKCustomUIModule/Controller/MKAboutPage (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-    - MKCustomUIModule/Controller/MKAboutPage/Controller (= 1.4.0)
-    - MKCustomUIModule/Controller/MKAboutPage/Model (= 1.4.0)
-    - MKCustomUIModule/Controller/MKAboutPage/View (= 1.4.0)
-  - MKCustomUIModule/Controller/MKAboutPage/Controller (1.4.0):
+    - MKCustomUIModule/Controller/MKAboutPage/Controller (= 1.4.4)
+    - MKCustomUIModule/Controller/MKAboutPage/Model (= 1.4.4)
+    - MKCustomUIModule/Controller/MKAboutPage/View (= 1.4.4)
+  - MKCustomUIModule/Controller/MKAboutPage/Controller (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
@@ -902,180 +974,188 @@ PODS:
     - MKBaseModuleLibrary
     - MKCustomUIModule/Controller/MKAboutPage/Model
     - MKCustomUIModule/Controller/MKAboutPage/View
-  - MKCustomUIModule/Controller/MKAboutPage/Model (1.4.0):
+  - MKCustomUIModule/Controller/MKAboutPage/Model (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/Controller/MKAboutPage/View (1.4.0):
+  - MKCustomUIModule/Controller/MKAboutPage/View (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule/Controller/MKAboutPage/Model
-  - MKCustomUIModule/Controller/MKAlertController (1.4.0):
+  - MKCustomUIModule/Controller/MKAlertController (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/Controller/MKTrackerAboutPage (1.4.0):
+  - MKCustomUIModule/Controller/MKTrackerAboutPage (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-    - MKCustomUIModule/Controller/MKTrackerAboutPage/Controller (= 1.4.0)
-  - MKCustomUIModule/Controller/MKTrackerAboutPage/Controller (1.4.0):
+    - MKCustomUIModule/Controller/MKTrackerAboutPage/Controller (= 1.4.4)
+  - MKCustomUIModule/Controller/MKTrackerAboutPage/Controller (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/Controller/MKTrackerLogPage (1.4.0):
+  - MKCustomUIModule/Controller/MKTrackerLogPage (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-    - MKCustomUIModule/Controller/MKTrackerLogPage/Controller (= 1.4.0)
-  - MKCustomUIModule/Controller/MKTrackerLogPage/Controller (1.4.0):
+    - MKCustomUIModule/Controller/MKTrackerLogPage/Controller (= 1.4.4)
+  - MKCustomUIModule/Controller/MKTrackerLogPage/Controller (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/MQTTServerView (1.4.0):
+  - MKCustomUIModule/MQTTServerView (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-    - MKCustomUIModule/MQTTServerView/GeneralParams (= 1.4.0)
-    - MKCustomUIModule/MQTTServerView/SSL (= 1.4.0)
-    - MKCustomUIModule/MQTTServerView/UserCredentials (= 1.4.0)
-  - MKCustomUIModule/MQTTServerView/GeneralParams (1.4.0):
-    - CircleProgressBar
-    - Masonry
-    - MBProgressHUD
-    - MJRefresh
-    - MKBaseModuleLibrary
-    - MKCustomUIModule/View/MKTextField
-  - MKCustomUIModule/MQTTServerView/SSL (1.4.0):
-    - CircleProgressBar
-    - Masonry
-    - MBProgressHUD
-    - MJRefresh
-    - MKBaseModuleLibrary
-  - MKCustomUIModule/MQTTServerView/UserCredentials (1.4.0):
+    - MKCustomUIModule/MQTTServerView/GeneralParams (= 1.4.4)
+    - MKCustomUIModule/MQTTServerView/SSL (= 1.4.4)
+    - MKCustomUIModule/MQTTServerView/UserCredentials (= 1.4.4)
+  - MKCustomUIModule/MQTTServerView/GeneralParams (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule/View/MKTextField
-  - MKCustomUIModule/UIAdopter (1.4.0):
+  - MKCustomUIModule/MQTTServerView/SSL (1.4.4):
+    - CircleProgressBar
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MKBaseModuleLibrary
+  - MKCustomUIModule/MQTTServerView/UserCredentials (1.4.4):
+    - CircleProgressBar
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MKBaseModuleLibrary
+    - MKCustomUIModule/View/MKTextField
+  - MKCustomUIModule/UIAdopter (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule/View
-  - MKCustomUIModule/View (1.4.0):
+  - MKCustomUIModule/View (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-    - MKCustomUIModule/View/HaveRefreshView (= 1.4.0)
-    - MKCustomUIModule/View/MKHexKeyBoard (= 1.4.0)
-    - MKCustomUIModule/View/MKHudManager (= 1.4.0)
-    - MKCustomUIModule/View/MKPageControl (= 1.4.0)
-    - MKCustomUIModule/View/MKPickerView (= 1.4.0)
-    - MKCustomUIModule/View/MKProgressView (= 1.4.0)
-    - MKCustomUIModule/View/MKSearchButton (= 1.4.0)
-    - MKCustomUIModule/View/MKSearchConditionsView (= 1.4.0)
-    - MKCustomUIModule/View/MKSlider (= 1.4.0)
-    - MKCustomUIModule/View/MKTableSectionHeader (= 1.4.0)
-    - MKCustomUIModule/View/MKTextField (= 1.4.0)
-    - MKCustomUIModule/View/NirKxMenu (= 1.4.0)
-    - MKCustomUIModule/View/WifiAlertView (= 1.4.0)
-  - MKCustomUIModule/View/HaveRefreshView (1.4.0):
+    - MKCustomUIModule/View/HaveRefreshView (= 1.4.4)
+    - MKCustomUIModule/View/MKAlertView (= 1.4.4)
+    - MKCustomUIModule/View/MKHexKeyBoard (= 1.4.4)
+    - MKCustomUIModule/View/MKHudManager (= 1.4.4)
+    - MKCustomUIModule/View/MKPageControl (= 1.4.4)
+    - MKCustomUIModule/View/MKPickerView (= 1.4.4)
+    - MKCustomUIModule/View/MKProgressView (= 1.4.4)
+    - MKCustomUIModule/View/MKSearchButton (= 1.4.4)
+    - MKCustomUIModule/View/MKSearchConditionsView (= 1.4.4)
+    - MKCustomUIModule/View/MKSlider (= 1.4.4)
+    - MKCustomUIModule/View/MKTableSectionHeader (= 1.4.4)
+    - MKCustomUIModule/View/MKTextField (= 1.4.4)
+    - MKCustomUIModule/View/NirKxMenu (= 1.4.4)
+    - MKCustomUIModule/View/WifiAlertView (= 1.4.4)
+  - MKCustomUIModule/View/HaveRefreshView (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/View/MKHexKeyBoard (1.4.0):
+  - MKCustomUIModule/View/MKAlertView (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/View/MKHudManager (1.4.0):
+    - MKCustomUIModule/View/MKTextField
+  - MKCustomUIModule/View/MKHexKeyBoard (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/View/MKPageControl (1.4.0):
+  - MKCustomUIModule/View/MKHudManager (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/View/MKPickerView (1.4.0):
+  - MKCustomUIModule/View/MKPageControl (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/View/MKProgressView (1.4.0):
+  - MKCustomUIModule/View/MKPickerView (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/View/MKSearchButton (1.4.0):
+  - MKCustomUIModule/View/MKProgressView (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/View/MKSearchConditionsView (1.4.0):
+  - MKCustomUIModule/View/MKSearchButton (1.4.4):
+    - CircleProgressBar
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MKBaseModuleLibrary
+  - MKCustomUIModule/View/MKSearchConditionsView (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule/View/MKSlider
-  - MKCustomUIModule/View/MKSlider (1.4.0):
+  - MKCustomUIModule/View/MKSlider (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/View/MKTableSectionHeader (1.4.0):
+  - MKCustomUIModule/View/MKTableSectionHeader (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/View/MKTextField (1.4.0):
+  - MKCustomUIModule/View/MKTextField (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/View/NirKxMenu (1.4.0):
+  - MKCustomUIModule/View/NirKxMenu (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - MKBaseModuleLibrary
-  - MKCustomUIModule/View/WifiAlertView (1.4.0):
+  - MKCustomUIModule/View/WifiAlertView (1.4.4):
     - CircleProgressBar
     - Masonry
     - MBProgressHUD
@@ -1119,10 +1199,10 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
-  MKBaseBleModule: 6019b69cf3c5a220b1cfe18e71e1e5e63f4757da
-  MKBaseModuleLibrary: 859013194f81daa5f8a7a777ce88bf58cd3b5919
-  MKBlePlugMax: 080e20598d9138bfeb1b8ad7b61fac6cbf8e36f8
-  MKCustomUIModule: 91646517fc7a90d94dd5578d119fec38d67d6a90
+  MKBaseBleModule: 15aa067c4e408a473e025b1a768ebce00a7e5949
+  MKBaseModuleLibrary: 6de43aeeb519d1c5f3aa94ebaffe8b3a57351312
+  MKBlePlugMax: b88c5526f08f96a0462db3cc4d5a609e024006eb
+  MKCustomUIModule: 83b76a0ccd1ac855157091b389154bd6a309c414
   MLInputDodger: 79a0e420a80d0d3bba122bf2639603cc76609ba8
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   WRNavigationBar: 10bfdf96addf14d640d07c2ef08a029c18d8af10
@@ -1130,4 +1210,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 6de4ee0afdcb4dec67a22b8dfb36f15528ab249d
 
-COCOAPODS: 1.10.0.rc.1
+COCOAPODS: 1.12.0

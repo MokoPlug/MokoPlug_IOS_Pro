@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "summary": "A short description of MKBlePlugMax.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/aadyx2007@163.com/MKBlePlugMax",
+  "homepage": "https://github.com/MokoPlug/MokoPlug_IOS_Pro",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "aadyx2007@163.com": "aadyx2007@163.com"
   },
   "source": {
-    "git": "https://github.com/aadyx2007@163.com/MKBlePlugMax.git",
+    "git": "https://github.com/MokoPlug/MokoPlug_IOS_Pro.git",
     "tag": "0.0.1"
   },
   "platforms": {
@@ -121,6 +121,9 @@
         "MKBlePlugMax/Expand": [
 
         ],
+        "MKBlePlugMax/CTMediator": [
+
+        ],
         "MKBaseModuleLibrary": [
 
         ],
@@ -156,7 +159,12 @@
             },
             {
               "name": "View",
-              "source_files": "MKBlePlugMax/Classes/Functions/AboutPage/View/**"
+              "source_files": "MKBlePlugMax/Classes/Functions/AboutPage/View/**",
+              "dependencies": {
+                "MKBlePlugMax/Functions/AboutPage/Model": [
+
+                ]
+              }
             }
           ]
         },
@@ -418,7 +426,12 @@
             },
             {
               "name": "Model",
-              "source_files": "MKBlePlugMax/Classes/Functions/ProtectionConfigPage/Model/**"
+              "source_files": "MKBlePlugMax/Classes/Functions/ProtectionConfigPage/Model/**",
+              "dependencies": {
+                "MKBlePlugMax/Functions/ProtectionConfigPage/Header": [
+
+                ]
+              }
             },
             {
               "name": "Header",
@@ -454,9 +467,6 @@
 
                 ],
                 "MKBlePlugMax/Functions/TabBarPage/Controller": [
-
-                ],
-                "MKBlePlugMax/Functions/AboutPage/Controller": [
 
                 ]
               }

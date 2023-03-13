@@ -340,7 +340,7 @@
         //查询总累计电能数据
         NSInteger energy = [MKBLEBaseSDKAdopter getDecimalWithHex:content range:NSMakeRange(0, content.length)];
         resultDic = @{
-            @"total":[NSString stringWithFormat:@"%.2f",(energy * 0.01)],
+            @"total":[NSString stringWithFormat:@"%.3f",(energy * 0.001)],
         };
         operationID = mk_bpm_taskReadTotalEnergyDataOperation;
     }else if ([cmd isEqualToString:@"5d"]) {

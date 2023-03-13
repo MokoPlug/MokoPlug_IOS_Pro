@@ -463,7 +463,7 @@ static dispatch_once_t onceToken;
     NSString *frequencyOfCurrent = [NSString stringWithFormat:@"%.2f",(currentFrequencyValue * 0.01)];
     
     NSInteger totalEnergyValue = [MKBLEBaseSDKAdopter getDecimalWithHex:content range:NSMakeRange(34, 8)];
-    NSString *totalEnergy = [NSString stringWithFormat:@"%.2f",(totalEnergyValue * 0.01)];
+    NSString *totalEnergy = [NSString stringWithFormat:@"%.3f",(totalEnergyValue * 0.001)];
     
     NSNumber *txPower = [MKBLEBaseSDKAdopter signedHexTurnString:[content substringWithRange:NSMakeRange(42, 2)]];
     
@@ -564,7 +564,7 @@ static dispatch_once_t onceToken;
     if ([cmd isEqualToString:@"05"]) {
         //总累计电能
         NSInteger energy = [MKBLEBaseSDKAdopter getDecimalWithHex:dataContent range:NSMakeRange(0, dataContent.length)];
-        NSString *energyValue = [NSString stringWithFormat:@"%.2f",(energy * 0.01)];
+        NSString *energyValue = [NSString stringWithFormat:@"%.3f",(energy * 0.001)];
         [[NSNotificationCenter defaultCenter] postNotificationName:mk_bpm_receiveTotalEnergyDataNotification
                                                             object:nil
                                                           userInfo:@{@"total":energyValue}];

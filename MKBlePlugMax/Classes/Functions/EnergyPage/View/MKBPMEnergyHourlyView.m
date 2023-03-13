@@ -137,7 +137,7 @@
         [self.dataList addObject:cellModel];
     }
     self.dataList = [[self.dataList reverseObjectEnumerator] allObjects];
-    NSString *totalValueString = [NSString stringWithFormat:@"%.2f",totalValue];
+    NSString *totalValueString = [NSString stringWithFormat:@"%.3f",totalValue];
     self.energyLabel.attributedText = [MKCustomUIAdopter attributedString:@[@"Today energy: ",totalValueString,@"KWh"]
                                                                     fonts:@[MKFont(13.f),MKFont(17.f),MKFont(17.f)]
                                                                    colors:@[DEFAULT_TEXT_COLOR,NAVBAR_COLOR_MACROS,NAVBAR_COLOR_MACROS]];

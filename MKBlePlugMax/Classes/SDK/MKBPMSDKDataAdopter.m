@@ -119,8 +119,8 @@
     NSString *subContent = [content substringFromIndex:12];
     NSMutableArray *energyList = [NSMutableArray array];
     for (NSInteger i = 0; i < [number integerValue]; i ++) {
-        NSInteger energyValue = [MKBLEBaseSDKAdopter getDecimalWithHex:subContent range:NSMakeRange(i * 4, 4)];
-        NSString *energy = [NSString stringWithFormat:@"%.2f",(energyValue * 0.01)];
+        NSInteger energyValue = [MKBLEBaseSDKAdopter getDecimalWithHex:subContent range:NSMakeRange(i * 6, 6)];
+        NSString *energy = [NSString stringWithFormat:@"%.3f",(energyValue * 0.001)];
         [energyList addObject:energy];
     }
     return @{
